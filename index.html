@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="/project 5 agustus Attar/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Moon</h1>
+        </div>
+        <ul id="menulist" class="hidden">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="ph ph-list" onclick="toggleMenu()"></i>
+        </div>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      </nav>
+    </header>
+    <div class="main-content">
+      <aside>
+        <h2>Selamat datang di website kalkulator MIB</h2>
+        <article>
+          <p>
+            Body Mass Index (BMI) atau yang sering dikenal dengan Indeks Massa
+            Tubuh (IMT) adalah nilai ukur untuk mengetahui status gizi seseorang
+            berdasarkan berat dan tinggi badannya. Nilai BMI juga dapat menjadi
+            alat skrining awal untuk mengetahui risiko seseorang terhadap suatu
+            penyakit. Nilai BMI yang tinggi menandakan bahwa Anda kelebihan
+            berat badan (overweight atau obesitas). Sementara nilai BMI yang
+            rendah artinya Anda kekurangan gizi dan memiliki berat badan rendah.
+            Namun, BMI tidak bisa membedakan persen lemak tubuh dan persen massa
+            otot.
+          </p>
+        </article>
+        <form>
+          <div class="outer-container">
+            <div class="radio-container">
+              <h3>Jenis Kelamin</h3>
+              <input
+                type="radio"
+                id="laki-laki"
+                name="jenis-kelamin"
+                value="laki-laki" /><label for="laki-laki">Laki-Laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenis-kelamin"
+                value="perempuan" /><label for="perempuan">Perempuan</label>
+            </div>
+            <div class="input-container">
+              <label for="weight">Berat Badan:</label>
+              <input type="number" id="weight" required />
+              <br />
+              <label for="age">Usia:</label>
+              <input type="number" id="age" required />
+              <br />
+              <label for="height">Tinggi Badan:</label>
+              <input type="number" id="height" required />
+            </div>
+            <div>
+              <button class="button bg-green" id="calculateBtn">
+                Hitung BMI
+              </button>
+              <button class="button bg-tomato" id="resetBtn">Reset</button>
+            </div>
+          </div>
+        </form>
+        <article>
+          <p>
+            Kalkulator BMI dapat berguna untuk membantu orang mencapai target
+            kebugaran. Indeks Massa Tubuh ( IMT ), yang juga dikenal sebagai
+            indikator obesitas, dapat membantu para ahli medis menentukan apakah
+            pasiennya kekurangan berat badan, kelebihan berat badan, atau
+            obesitas.
+          </p>
+        </article>
+      </aside>
+
+      <aside>
+        <div class="result-container" id="resultContainer">
+          <label for="resultContainer">Hasil:</label>
+          <div id="result" class="result-box"></div>
+        </div>
+        <br />
+        <section>
+          <p>
+            Kalkulator ini bukanlah sebuah alat diagnosis medis ataupun
+            pengganti konsultasi dokter spesialis/nutrisionis. Alat ini hanya
+            untuk skrining yang bisa Anda lakukan mandiri, sebelum memeriksakan
+            diri ke dokter. Setelah melihat hasil ini, sebaiknya tetap
+            konsultasi ke dokter agar tahu lebih pasti kondisi kesehatan Anda
+            saat ini. Hasil kalkulator BMI ini tidak bisa digunakan jika anda
+            memiliki gangguan pola makan.
+          </p>
+          <br />
+          <p>
+            Jika BMI Anda di bawah 18,5, berat badan Anda termasuk kurang.
+            Ketika berat badan Anda cukup rendah dari berat ideal, Anda juga
+            memiliki risiko penyakit tertentu akibat kekurangan nutrisi dan
+            sistem kekebalan tubuh yang lemah. Hal ini membuka peluang pada
+            risiko kesehatan malnutrisi, anemia, osteoporosis karena kekurangan
+            kalsium dan vitamin D, masalah kesuburan dari siklus menstruasi yang
+            tidak teratur, risiko komplikasi operasi yang lebih tinggi, serta
+            pertumbuhan dan masalah perkembangan yang terhambat pada anak dan
+            remaja.
+          </p>
+        </section>
+      </aside>
+    </div>
+
+    <script src="/project 5 agustus Attar/js/script.js"></script>
+    <footer>
+      <p>&copy; 2024 all rights reserved</p>
+    </footer>
+  </body>
+</html>

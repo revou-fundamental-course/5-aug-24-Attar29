@@ -1,0 +1,230 @@
+/* style css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", "Segoe UI", sans-serif;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: "Nunito", "Segoe UI", sans-serif;
+    background-color: #f5f1f1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d4b2a7;
+    position: relative;
+    height: 70px;
+  }
+  
+  .logo h1 {
+    color: aquamarine;
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #693a2a;
+    color: white;
+  }
+  
+  .menu-icon {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 25px;
+    gap: 20px;
+  }
+  
+  aside {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  article p,
+  section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  form {
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bg-green {
+    background-color: green;
+  }
+  
+  .bg-tomato {
+    background-color: tomato;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .result-container {
+    margin-bottom: 20px;
+  }
+  
+  .result-box {
+    border: 1px solid #ccc;
+    background-color: antiquewhite;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .result-box p,
+  .result-box ul {
+    margin-bottom: 10px;
+  }
+  
+  .result-box ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #d4b2a7;
+    color: white;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: row;
+      height: auto;
+      padding: 10px;
+      display: flex;
+    }
+  
+    .logo h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      overflow: hidden;
+      display: flex;
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .menu-icon {
+      display: block;
+      color: white;
+    }
+  
+    .main-content {
+      padding: 10px;
+      flex-direction: column;
+    }
+  
+    aside {
+      flex: none;
+      margin-bottom: 20px;
+    }
+  
+    .outer-container {
+      gap: 10px;
+    }
+  
+    .input-container {
+      gap: 5px;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .result-box {
+      padding: 10px;
+    }
+  }
